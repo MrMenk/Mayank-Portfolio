@@ -142,17 +142,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+const btn = document.getElementById("resumeBtn");
+const text = document.getElementById("btnText");
+const track = document.getElementById("track");
+const bar = document.getElementById("bar");
 
+btn.addEventListener("click", () => {
+    btn.disabled = true;
+    text.textContent = "   ...     ";
+    track.style.opacity = "1";
 
+    let progress = 0;
 
+    const interval = setInterval(() => {
+        progress += Math.floor(Math.random() * 10) + 10;
 
+        if (progress >= 100) {
+            progress = 100;
+            clearInterval(interval);
 
+            setTimeout(() => {
+                track.style.opacity = "0";
+                text.innerHTML = `
+                    <svg class="checkmark" viewBox="0 0 52 52">
+                        <path d="M14 27 L22 35 L38 18"></path>
+                    </svg>
+                    <span>Download Started</span>
+    
+                `;
+            }, 200);
 
+            // REAL DOWNLOAD (optional)
+            window.location.href = "/Assets/Resume-Professional.pdf";
+        }
 
-
-
-
-
+        bar.style.width = progress + "%";
+    }, 300);
+});
 
 
 
@@ -278,3 +304,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
