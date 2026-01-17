@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title>Portfolio | Mayank Niboriya</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- LEFT GROUP -->
+        <div class="left">
+            <img src="Assets/Logo.jpg" alt="Logo" class="logo">
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+
+                    <li class="has-submenu">
+                        <a href="#Projects" class="submenu-toggle">
+                            Projects <span class="arrow">▾</span>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#temp-conv"><img src="#" alt="">Temperature Converter</a>
+                                <a href="#color-pick"><img src="#" alt="">Random Color Picker</a>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#Blogs">Blog</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- RIGHT ACTIONS -->
+        <div class="actions">
+            <a href="https://www.instagram.com/ma_ynk5961/" target="_blank"> <img src="Assets/Insta.png"
+                    alt="Instagram"></a>
+            <a href="https://leetcode.com/u/mayank_niboriya09/" target="_blank"> <img src="Assets/leetcode.png"
+                    alt="leetcode"></a>
+            <a href="https://github.com/MrMenk" target="_blank"> <img src="Assets/Git.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/mayank-niboriya/" target="_blank"> <img src="Assets/Linkedin.png"
+                    alt="LinkedIn"></a>
+
+            <a href="Assets/Resume-Professional.pdf" class="resume-btn" target="_blank">
+                <img src="Assets/Doc.gif" alt="Resume" class="rsm-ic"> Resume
+            </a>
+        </div>
+        <!-- HAMBURGER -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+    <main>
+
+        <!-- start hero section here  -->
+        <section class="hero">
+            <section class="hero-left">
+                <div class="greet">
+                    <h2>Hello,</h2>
+                    <h3>You're Most
+                        <span style="font-weight: 700; color: rgb(17, 1, 84);" id="welcome-text" class="typing"></span>
+                    </h3>
+                    <h4>Java Backend Developer focused on scalable, maintainable systems</h4>
+                    <p class="hero-proof">high-performance APIs • maintainable & Clean architecture • Problem-solver</p>
+                    <p class="hero-proof">BCA Graduate | Actively seeking internships / entry-level roles</p>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="#Projects" class="btn btn-primary">View Projects</a>
+
+                    <div class="hire-wrapper">
+                        <a href="#Contact" class="btn btn-outline hire-btn">Hire Me</a>
+
+                        <div class="hire-options">
+                            <a href="mailto:nibpriyamenk@gmail.com" class="hire-icon email" title="Email">
+                                <img src="Assets/mail.png" alt="">
+                            </a>
+                            <a href="tel:+916269873727" class="hire-icon call" title="Call">
+                                <img src="Assets/call.png" alt="">
+                            </a>
+                            <a href="https://wa.me/916269873727" target="_blank" class="hire-icon whatsapp"
+                                title="WhatsApp">
+                                <img src="Assets/whatsapp.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <button class="resume-btnhero" id="resumeBtn">
+                        <div class="btn-text" id="btnText" itemref="Assets/Resume-Professional.pdf">Download Resume
+                        </div>
+                        <div class="progress-track" id="track">
+                            <div class="progress-bar" id="bar"></div>
+                        </div>
+                    </button>
+
+                </div>
+            </section>
+
+            <section class="hero-right">
+                <img src="Assets/profile3.png" alt="Developer image">
+            </section>
+
+        </section>
+        <!-- end hero section here  -->
+
+
+        <span class="scroll-hint">Scroll ↓</span> <!-- Scroll to down  -->
+
+
+        <!-- start about section here  -->
+        <section class="about-container" id="about">
+
+            <h2 class="about-title">About <span style="color: rgba(0, 0, 255, 0.626);">M</span>e</h2>
+
+            <p class="about-intro">
+                I’m Mayank, an MCA student with a deep <strong>interest in SWE</strong>. While my daily focus is on
+                <strong>mastering Java and backend systems</strong>, believer in the <strong>'Full-Stack'
+                    approach</strong>. I care deeply
+                about <strong>clean architecture and security</strong>; I want to make sure that whatever I build today
+                is <strong>easy to
+                    maintain and scale for </strong> to come."
+            </p>
+
+            <div class="about-content">
+
+                <!-- LEFT SIDE -->
+                <div class="about-left">
+
+                    <div class="feature-box">
+                        <img src="Assets/te.png" alt="icon">
+                        <div>
+                            <h3>Tech Enthusiast</h3>
+                            <p>
+                                I am always eager to learn,
+                                experiment, and innovate in the tech
+                                space ...
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="feature-box-hr">
+                    <div class="feature-box">
+                        <img src="Assets/sde.png" alt="icon">
+                        <div>
+                            <h3>Aspiring Software Engineer</h3>
+                            <p>
+                                Focused on mastering Java backend development, system design,
+                                and scalable application architecture.
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="feature-box-hr">
+                    <div class="feature-box">
+                        <img src="Assets/DCE.png" alt="icon">
+                        <div>
+                            <h3>Digital Content Creator</h3>
+                            <p>
+                                Sharing knowledge through blogs and social platforms to help
+                                others learn and grow in tech.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- DIVIDER -->
+                <div class="divider"></div>
+
+                <!-- RIGHT SIDE -->
+                <div class="about-right">
+
+                    <p>
+                        I have completed my <strong> BCA </strong>and currently pursuing <strong>MCA</strong> and
+                        focused aspirant to achieve my goals
+                    </p>
+
+                    <p><strong>Technical Foundation:</strong></p>
+                    <ul>
+                        <li>Programming Languages: C, C++, Java</li>
+                        <li>Web Development: HTML, CSS, JavaScript</li>
+                        <li>Tools: Git, VS Code, MS Office</li>
+                    </ul>
+
+                    <p><strong>Future Goals:</strong></p>
+                    <ul>
+                        <li>Become a strong Java Backend Developer</li>
+                        <li>Transition into a Software Engineering role</li>
+                        <li>Expand into Full Stack Development</li>
+                    </ul>
+
+                    <a href="#Contact"> <button type="button" class="contact-btn">Contact Me</button></a>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- end about section here  -->
+
+
+        <!-- start social linls section here  -->
+        <section class="socials">
+            <div class="socials-header">
+                <h2>My Socials</h2>
+                <p>If you want to know more about me, go on my pages & follow me.</p>
+            </div>
+
+            <div class="socials-cards">
+
+                <!-- GitHub -->
+                <div class="social-card">
+                    <h3>Github</h3>
+                    <div class="social-handle">
+                        <img src="Assets/Git.png" alt="GitHub">
+                        <a href="https://github.com/MrMenk" target="_blank">@MrMenk</a>
+                    </div>
+                    <hr>
+                    <div class="social-count">
+                        <span class="count" data-target="3">0</span>
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="social-card">
+                    <h3>LinkedIn</h3>
+                    <div class="social-handle">
+                        <img src="Assets/Linkedin.png" alt="LinkedIn">
+                        <a href="https://www.linkedin.com/in/mayank-niboriya/" target="_blank">@mayank-niboriya</a>
+                    </div>
+                    <hr>
+                    <div class="social-count">
+                        <span class="count" data-target="77">0</span>
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+
+                <!-- leetcode -->
+                <div class="social-card">
+                    <h3>Leetcode : Problems</h3>
+                    <div class="social-handle">
+                        <img src="Assets/leetcode.png" alt="Leetcode">
+                        <a href="https://leetcode.com/u/mayank_niboriya09/" target="_blank">@mayank_niboriya09</a>
+                    </div>
+                    <hr>
+                    <div class="social-count">
+                        <span class="count" data-target="2">0</span>
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+
+                <!-- Instagram -->
+                <div class="social-card">
+                    <h3>Instagram</h3>
+                    <div class="social-handle">
+                        <img src="Assets/Insta.png" alt="Instagram">
+                        <a href="https://www.instagram.com/ma_ynk5961/" target="_blank">@ma_ynk5961</a>
+                    </div>
+                    <hr>
+                    <div class="social-count">
+                        <span class="count" data-target="138">0</span>
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end social linls section here  -->
+
+
+        <!-- start skill section here  -->
+        <section class="skill-section">
+            <h2 id="Skills" style=" padding-top: 20px;">Skills</h2>
+            <div class="skills-para">
+                <p>
+                    Strong foundation in Java with a focus on DSA for efficient problem-solving. Skilled in SQL and
+                    DBMS
+                    for reliable data handling. Familiar with HTML, CSS, and JavaScript to collaborate effectively
+                    with
+                    front-end teams.</p>
+                <p>Solid understanding of core computer science concepts. Able to analyze complex
+                    problems using logical and structured approaches. Comfortable with documentation and reporting
+                    using
+                    MS Office.
+                </p>
+            </div>
+            <div class="skill-box">
+                <div class="skill-box-left">
+                    <h2 style="font-size: 30px; color: #120154b4;">Technical Skills:</h2>
+                    <p><strong>Front-end</strong> (HTML, CSS, JS)</p>
+                    <p><strong>Back-end</strong> (Java, C++, C)</p>
+                    <p><strong>Database</strong> (DBMS, SQL/MySQL)</p>
+                    <p><strong>Data Structure and Algorithm</strong> (JAVA)</p>
+                    <p><strong>Problem Solving</strong></p>
+                    <p><strong>CS Fundametals </strong>(OS, OOPs, Computer Networking)</p>
+                    <p> <strong>MS Office </strong>(Word, Excel, PowerPoint)</p>
+
+
+                    <h2 style="font-size: 30px; color: #120154b4;">Soft Skills:</h2>
+                    <p><strong>Communication</strong></p>
+                    <p><strong>Teamwork</strong></p>
+                    <p><strong>Logical Ability</strong></p>
+
+
+                    <h2 style="font-size: 30px; color: #120154b4;">Tools and Plateforms:</h2>
+                    <p><strong>Git & Github</strong></p>
+                    <p><strong>VS Code</strong></p>
+                    <p><strong>Wordpress</strong></p>
+                </div>
+
+            </div>
+
+            <div class="skill-icon-collection" id="skill-icon">
+
+                <section class="skill-bar-section">
+
+                    <div class="skill-bar">
+                        <div class="skill-bar-header">
+                            <span>Programming</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-track-skill">
+                            <div class="progress-fill" data-progress="85"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-bar">
+                        <div class="skill-bar-header">
+                            <span>Data Structure and Algorithm</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-track-skill">
+                            <div class="progress-fill" data-progress="70"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-bar">
+                        <div class="skill-bar-header">
+                            <span>Backend + DB Development</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="progress-track-skill">
+                            <div class="progress-fill" data-progress="60"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-bar-header">
+                            <span>CS fundamentals</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-track-skill">
+                            <div class="progress-fill" data-progress="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-bar-header">
+                            <span>Problem Solving</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="progress-track-skill">
+                            <div class="progress-fill" data-progress="82"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-bar-header">
+                            <span>Communication</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-track-skill">
+                            <div class="progress-fill" data-progress="75"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-bar-header">
+                            <span>Tools and Plateforms</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-track-skill">
+                            <div class="progress-fill" data-progress="80"></div>
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <div class="iconsofskill">
+                    <img src="Assets/office.png" alt="" class="skill-icon-office">
+                    <img src="Assets/html.png" alt="" class="skill-icon-html">
+                    <img src="Assets/css.png" alt="" class="skill-icon-css">
+                    <img src="Assets/js.png" alt="" class="skill-icon-js">
+                    <img src="Assets/c.png" alt="" class="skill-icon-c">
+                    <img src="Assets/c++.png" alt="" class="skill-icon-cplus">
+                    <img src="Assets/java.jpeg" alt="" class="skill-icon-java">
+                    <img src="Assets/SQL.png" alt="" class="skill-icon-sql">
+                </div>
+
+                <button class="skill-btn" type="button">View in Detail</button>
+            </div>
+
+        </section>
+        <!-- end skill section here  -->
+
+
+        <!-- Project Section start from here -->
+        <section class="Project-section" id="Projects">
+            <h2>Projects</h2>
+            <p>I'm building projects using my learning skills, such as HTML, CSS, JavaScript
+                etc ... I also Created Some Beginning-level Projects Given Below.</p>
+
+
+            <div class="pr-data">
+                <div class="pr-img">
+                    <img src="Assets/pr1.jpg" alt="Project 1">
+                </div>
+
+                <div class="month-card">
+                    <p>Oct 2023</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>🧑‍🦱 My Portfolio Website</h3>
+                    <p class="project-desc">
+                        This is my first portfolio Website, created by my self, not external website or no AI
+                        used
+                        in this.
+                    </p>
+                    <ul class="project-points">
+                        <li>Built from own skill.</li>
+                        <li>No tool or AI Used.</li>
+                        <li>It helps to me put my knowledge in practicle way.</li>
+                        <li>It used for grow my exposure in my college life.</li>
+                    </ul>
+                    <p class="project-tech">
+                        <strong>Tech:</strong> HTML, CSS, JavaScript.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/MrMenk/First-Website" target="_blank">GitHub</a>
+                        <a href="#">It's Not Live</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pr-data">
+                <div class="pr-img" id="temp-conv">
+                    <img src="Assets/Temprature Calculator.png" alt="Project">
+                </div>
+
+                <div class="month-card">
+                    <p>Nov 2023</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>🌡️ Temperature Converter</h3>
+                    <p class="project-desc">
+                        It can convert various temperatures between Celsius (°C), Fahrenheit (°F), and Kelvin (K),
+                        Works properly and instantly.
+                    </p>
+                    <ul class="project-points">
+                        <li>Real-time conversion.</li>
+                        <li>Clean and modern UI.</li>
+                        <li>Fully responsive design.</li>
+                        <li>Input validation to prevent invalid values.</li>
+                    </ul>
+                    <p class="project-tech">
+                        <strong>Tech:</strong> HTML, CSS, JavaScript.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/MrMenk/Simple-Temperature-Converter" target="_blank">GitHub</a>
+                        <a href="https://mrmenk.github.io/Simple-Temperature-Converter/" target="_blank">View Live
+                            Project</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="pr-data" id="color-pick">
+                <div class="pr-img" id="temp-conv">
+                    <img src="Assets/colorpick.jpg" alt="Project">
+                </div>
+
+                <div class="month-card">
+                    <p>Dec 2025</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>🎨 Random Color Picker</h3>
+                    <p class="project-desc">
+                        With a single click, the app generates a random HEX color, updates the background instantly, and
+                        displays the color code in a clean, minimal UI.
+                    </p>
+                    <ul class="project-points">
+                        <li>Centered color card.</li>
+                        <li>Displays the generated color code.</li>
+                        <li>HEX color code displayed prominently.</li>
+                        <li>Clean, responsive, minimal UI.</li>
+                        <li>Updates **background color dynamically**.</li>
+                    </ul>
+                    <p class="project-tech">
+                        <strong>Tech:</strong> HTML, CSS, JavaScript.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/MrMenk/Random-Color-Picker" target="_blank">GitHub</a>
+                        <a href="https://mrmenk.github.io/Random-Color-Picker" target="_blank">View Live
+                            Project</a>
+                    </div>
+                </div>
+
+        </section>
+        <!-- end of project section -->
+
+
+        <!-- experience section start -->
+        <section class="Experience-section" id="experience">
+            <h2>Education & Technical Foundation</h2>
+            <p>- Completed coursework in <strong>front-end development: HTML, CSS, and JavaScript</strong>, with a
+                strong focus
+                on practical application. </p>
+            <p>- Acquired proficiency in <strong>SQL and database fundamentals</strong> through coursework.</p>
+            <p>- Developed <strong>problem-solving </strong>skills via studies in <strong>data structures and algorithms
+                    using Java</strong>.</p>
+            <p>- Applied <strong>SEO</strong> principles to enhance web projects for improved online visibility and user
+                engagement.
+            </p>
+
+            <div class="experience-box">
+
+                <!-- LEFT SIDE -->
+                <div class="academics">
+
+                    <div class="feature-box">
+                        <img src="Assets/Education.png" alt="icon">
+                        <div>
+                            <h3>Higher Education <span> 2019 </span> </h3>
+                            <p>Madhya Pradesh Board of Higher Education</p>
+                            <p>Result - <strong> 88.6%</strong></p>
+                        </div>
+                    </div>
+                    <hr class="feature-box-hr">
+                    <div class="feature-box">
+                        <img src="Assets/Education.png" alt="icon">
+                        <div>
+                            <h3>Higher Secondry Education <span> 2021 </span> </h3>
+                            <p>Madhya Pradesh Board of Higher Secondry Education</p>
+                            <p>Result - <strong> 88%</strong></p>
+                        </div>
+                    </div>
+                    <hr class="feature-box-hr">
+                    <div class="feature-box">
+                        <img src="Assets/Education.png" alt="icon">
+                        <div>
+                            <h3>Bechalors of Computer Applications (BCA) — <span>2021 – 2024</span> </h3>
+                            <p>DVC, Jiwaji University</p>
+                            <p>Result - <strong>7.93 CGPA</strong> </p>
+                        </div>
+                    </div>
+                    <hr class="feature-box-hr">
+                    <div class="feature-box">
+                        <img src="Assets/Education.png" alt="icon">
+                        <div>
+                            <h3>Master of Computer Applications (MCA) — <span>2024 – Present</span> </h3>
+                            <p>DCSA, Dr. Harisingh Gour University</p>
+                            <p>Status: <strong> Ongoing</strong> </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- DIVIDER -->
+                <div class="divider"></div>
+
+                <!-- RIGHT SIDE -->
+                <div class="certification">
+
+                    <div class="ETF">
+                        <div class="certificationhead">
+                            <img src="Assets/Certificates.png" alt="">
+                            <p>
+                                <strong>Professional Certifications:</strong>
+                            </p>
+                        </div>
+                        <ul>
+                            <li><strong>Digital Marketing</strong> Bootcamp - Uncode Academy</li>
+                            <li><strong>Data Structure</strong> and Algorithm Using JAva - WsCube Tech</li>
+                            <li>Complete <strong> SEO</strong> - WsCube Tech</li>
+                        </ul>
+                    </div>
+                    <div class="ETF">
+                        <div class="certificationhead">
+                            <img src="Assets/c-obj.png" alt="">
+                            <p>
+                                <strong>Career Objectives:</strong>
+                            </p>
+                        </div>
+                        <ul>
+                            <li>Become a strong <strong></strong> Java Backend Developer</li>
+                            <li>Transition into a <strong></strong> Software Engineering role</li>
+                            <li>Expand into <strong></strong> Full Stack Development</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <a href="#Contact" style="text-decoration: none;">
+                <button type="button" class="contact-btn experience-contat-btn">Contact Me</button>
+            </a>
+
+        </section>
+        <!-- experience section end -->
+
+
+        <!-- start Blog section here  -->
+        <section class="blog-section" id="Blogs">
+            <div class="blog-header">
+                <h2>Blog Posts</h2>
+            </div>
+
+            <div class="blog-grid" id="blogGrid">
+                <!-- Add as many posts as you want -->
+                <article class="blog-card"><a href="/Blog-posts/Post1.html" target="_blank">How to Make a Professional
+                        Portfolio
+                        Website</a></article>
+                <article class="blog-card"><a href="/Blog-posts/post2.html" target="_blank">The Journey of a BCA
+                        Student</a></article>
+                <article class="blog-card">Upcoming....</article>
+                <!-- and so on -->
+            </div>
+
+            <div class="blog-pagination">
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+            </div>
+
+        </section>
+        <!-- end blog section here  -->
+
+
+        <!-- start contact section here  -->
+        <section class="contact-section" id="Contact">
+
+            <div class="contact-header">
+                <h2>Get In Touch</h2>
+                <p>
+                    Interested in working together or discussing an opportunity?
+                    Feel free to reach out — I’m always open to meaningful conversations.
+                </p>
+            </div>
+
+            <div class="contact-wrapper">
+
+                <!-- LEFT: CONTACT INFO -->
+                <div class="contact-info">
+
+                    <div class="contact-item">
+                        <span class="label">Email</span>
+                        <a href="mailto:niboriyamenk@gmail.com">
+                            niboriyamenk@gmail.com
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/mayank-niboriya/" target="_blank">
+                            linkedin.com/in/mayank-niboriya
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="label">GitHub</span>
+                        <a href="https://github.com/MrMenk" target="_blank">
+                            github.com/MrMenk
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT: FORM -->
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                    <p class="form-status" id="formStatus"></p>
+                </form>
+
+            </div>
+
+        </section>
+        <!-- end contact section here  -->
+
+    </main>
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <!-- LEFT -->
+            <div class="footer-brand">
+                <h3>Mayank Niboriya</h3>
+                <p>
+                    Aspiring Software Engineer Dedicated to developing secure, scalable Java-based backend systems and
+                    maintainable full-stack applications.
+                </p>
+                <a href="Assets/Resume-Professional.pdf" class="footer-resume" download>
+                    Download Resume
+                </a>
+
+            </div>
+
+            <!-- CENTER -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Blogs">Blog</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <a href="mailto:niboriyamenk@gmail.com">niboriyamenk@gmail.com</a>
+                <span>India</span>
+
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/mayank-niboriya/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/MrMenk" target="_blank">GitHub</a>
+                    <a href="https://leetcode.com/u/mayank_niboriya09/" target="_blank">LeetCode</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            <span>© 2026 Mayank Niboriya. All rights reserved.</span>
+        </div>
+        <button class="scroll-top" id="scrollTopBtn">↑</button>
+
+        <button class="footer-toggle" id="footerToggle">Dark / Light</button>
+
+    </footer>
+
+    <!-- sidebar  -->
+    <aside class="side-nav" id="sideNav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+
+            <li class="has-submenu">
+                <a href="#Projects" class="submenu-toggle">
+                    Projects
+                </a>
+                <!-- <ul class="submenu">
+                        <li><a href="#BackendProjects">Backend Projects</a></li>
+                        <li><a href="#FrontendProjects">Frontend Projects</a></li>
+                        <li><a href="#MiniProjects">Mini Projects</a></li>
+                    </ul> -->
+            </li>
+
+            <li><a href="#Blogs">Blog</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+
+    </aside>
+    <!-- end of sidebar  -->
+</body>
