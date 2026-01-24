@@ -237,12 +237,13 @@ document.addEventListener("DOMContentLoaded", () => {
     btn?.addEventListener("click", () => {
         btn.disabled = true;
         track.style.opacity = "1";
-
+            
         let progress = 0;
         const timer = setInterval(() => {
             progress += 12;
             bar.style.width = progress + "%";
-
+                text.innerHTML = "Downloading....";
+            
             if (progress >= 100) {
                 clearInterval(timer);
                 text.innerHTML = "✔ Download Started";
@@ -258,4 +259,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
 
